@@ -127,9 +127,15 @@ export const tradingCollection = buildCollection<TradingEntry>({
                                 name: "Heading",
                                 dataType: "string",
                             },
-                            content: {
-                                name: "Content",
+                            content1: {
+                                name: "Content 1",
                                 dataType: "string",
+                                multiline:true
+                            },
+                            content2: {
+                                name: "Content 2",
+                                dataType: "string",
+                                multiline:true
                             },
                             imageUrl: {
                                 name: "Image URL",

@@ -394,7 +394,8 @@ export type TradingEntry ={
         content: string,
         list: {
             heading: string,
-            content: string,
+            content1: string,
+            content2: string,
             imageUrl: string,
         }[],
     },
