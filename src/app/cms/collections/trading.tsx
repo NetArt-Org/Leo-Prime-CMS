@@ -49,5 +49,142 @@ export const tradingCollection = buildCollection<TradingEntry>({
             },
             expanded: true
         },
+        info: {
+            name: "Info Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content1: {
+                    name: "First Para",
+                    dataType: "string",
+                    multiline:true,
+                },
+                content2: {
+                    name: "Second Para",
+                    dataType: "string",
+                    multiline:true,
+                },
+            },
+            expanded: true
+        },
+        table: {
+            name: "Table Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                classic:{
+                    name:"Classic",
+                    dataType:"string",
+                    markdown:true,
+                },
+                pro:{
+                    name:"Pro",
+                    dataType:"string",
+                    markdown:true,
+                },
+                ecn:{
+                    name:"ECN",
+                    dataType:"string",
+                    markdown:true,
+                },
+                cent:{
+                    name:"Cent",
+                    dataType:"string",
+                    markdown:true,
+                }
+            },
+            expanded: true
+        },
+        keyFeatures: {
+            name: "Key Features Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                list: {
+                    dataType: "array",
+                    name: "List",
+                    of: {
+                        dataType: "map",
+                        properties: {
+                            heading: {
+                                name: "Heading",
+                                dataType: "string",
+                            },
+                            content: {
+                                name: "Content",
+                                dataType: "string",
+                            },
+                            imageUrl: {
+                                name: "Image URL",
+                                dataType: "string",
+                                url: true
+                            },
+                        }
+                    },
+                    expanded: true,
+                },
+            },
+            expanded: true
+        },
+        tradingStrategy: {
+            name: "Trading Strategy Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                imageUrl: {
+                    name: "Image URL",
+                    dataType: "string",
+                    url: true
+                },
+                list: {
+                    dataType: "array",
+                    name: "List",
+                    of: {
+                        dataType: "map",
+                        properties: {
+                            imageUrl: {
+                                name: "Image URL",
+                                dataType: "string",
+                                url: true
+                            },
+                            heading: {
+                                name: "Heading",
+                                dataType: "string",
+                            },
+                            content: {
+                                name: "Content",
+                                dataType: "string",
+                            },
+                        }
+                    },
+                    expanded: true,
+                },
+            },
+            expanded: true
+        },
     },
 });

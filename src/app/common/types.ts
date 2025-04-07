@@ -70,11 +70,8 @@ export type AccountEntry = {
         heading: string,
         content: string,
         accountName: string,
-        list: {
-            heading: string;
-            content: string;
-            imageUrl: string;
-        }[];
+        table1: string,
+        table2:string,
         note: string,
     },
     steps: {
@@ -152,6 +149,38 @@ export type TradingEntry ={
         btnLink2: string,
         imageUrl: string,
     },
+    info: {
+        heading: string,
+        content1: string,
+        content2: string,
+    },
+    table: {
+        heading: string,
+        content: string,
+        classic: string,
+        pro: string,
+        ecn: string,
+        cent: string,
+    },
+    keyFeatures: {
+        heading: string,
+        content: string,
+        list: {
+            heading: string,
+            content: string,
+            imageUrl: string,
+        }[],
+    },
+    tradingStrategy: {
+        heading: string,
+        content: string,
+        imageUrl: string,
+        list: {
+            heading: string,
+            content: string,
+            imageUrl: string,
+        }[],
+    },
 }
 export type DepositEntry = {
     banner: {
@@ -175,20 +204,8 @@ export type DepositEntry = {
     paymentOption: {
         heading: string,
         content: string,
-        deposit: {
-            paymentMethod: string;
-            minimumDeposit: string;
-            maximumDeposit: string;
-            depositFees: string;
-            depositTiming: string;
-        }[];
-        withdraw: {
-            paymentMethod: string;
-            minimumDeposit: string;
-            maximumDeposit: string;
-            depositFees: string;
-            depositTiming: string;
-        }[];
+        deposit: string,
+        withdraw: string,
     },
     customerSupport: {
         heading: string,

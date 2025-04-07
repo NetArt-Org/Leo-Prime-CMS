@@ -102,66 +102,14 @@ export const depositCollection = buildCollection<DepositEntry>({
                     multiline:true,
                 },
                 deposit: {
-                    dataType: "array",
                     name: "Deposit",
-                    of: {
-                        dataType: "map",
-                        properties: {
-                            paymentMethod: {
-                                name: "Payment Method",
-                                dataType: "string",
-                                url:true
-                            },
-                            minimumDeposit: {
-                                name: "Minimum Deposit",
-                                dataType: "string",
-                            },
-                            maximumDeposit: {
-                                name: "Maximum Deposit",
-                                dataType: "string",
-                            },
-                            depositFees: {
-                                name: "Deposit Fees",
-                                dataType: "string",
-                            },
-                            depositTiming: {
-                                name: "Deposit Timing",
-                                dataType: "string",
-                            },
-                        }
-                    },
-                    expanded: true,
+                    dataType: "string",
+                    markdown:true,
                 },
                 withdraw: {
-                    dataType: "array",
                     name: "Withdraw",
-                    of: {
-                        dataType: "map",
-                        properties: {
-                            paymentMethod: {
-                                name: "Payment Method",
-                                dataType: "string",
-                                url:true
-                            },
-                            minimumDeposit: {
-                                name: "Minimum Deposit",
-                                dataType: "string",
-                            },
-                            maximumDeposit: {
-                                name: "Maximum Deposit",
-                                dataType: "string",
-                            },
-                            depositFees: {
-                                name: "Deposit Fees",
-                                dataType: "string",
-                            },
-                            depositTiming: {
-                                name: "Deposit Timing",
-                                dataType: "string",
-                            },
-                        }
-                    },
-                    expanded: true,
+                    dataType: "string",
+                    markdown:true,
                 },
             },
             expanded: true

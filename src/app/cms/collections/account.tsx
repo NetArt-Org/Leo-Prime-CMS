@@ -74,23 +74,15 @@ export const accountCollection = buildCollection<AccountEntry>({
                     name: "Account Name",
                     dataType: "string",
                 },
-                list: {
-                    dataType: "array",
-                    name: "List",
-                    of: {
-                        dataType: "map",
-                        properties: {
-                            heading: {
-                                name: "Heading",
-                                dataType: "string",
-                            },
-                            content: {
-                                name: "Content",
-                                dataType: "string",
-                            },
-                        }
-                    },
-                    expanded: true,
+                table1:{
+                    name:"Table 1",
+                    dataType:"string",
+                    markdown:true
+                },
+                table2:{
+                    name:"Table 2",
+                    dataType:"string",
+                    markdown:true
                 },
                 note: {
                     name: "Note",
