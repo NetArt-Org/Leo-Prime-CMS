@@ -1,0 +1,225 @@
+import { buildCollection } from "@firecms/core";
+import { DepositEntry } from "@/app/common/types";
+
+export const depositCollection = buildCollection<DepositEntry>({
+    id: "deposit",
+    path: "deposit",
+    name: "Deposit",
+    singularName: "Deposit Withdraw entry",
+    icon: "article",
+    group: "Content",
+    description: "Deposit Withdraw Page Content",
+    defaultSize: "l",
+    properties: {
+        banner: {
+            name: "Banner",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                btnTxt1: {
+                    name: "Button Text 1",
+                    dataType: "string",
+                },
+                btnLink1: {
+                    name: "Button Link 1",
+                    dataType: "string",
+                    url: true
+                },
+                btnTxt2: {
+                    name: "Button Text 2",
+                    dataType: "string",
+                },
+                btnLink2: {
+                    name: "Button Link 2",
+                    dataType: "string",
+                    url: true
+                },
+                imageUrl: {
+                    name: "Image URL",
+                    dataType: "string",
+                    url: true
+                }
+            },
+            expanded: true
+        },
+        info: {
+            name: "Payment Soltuion Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                    multiline:true,
+                },
+                list: {
+                    dataType: "array",
+                    name: "List",
+                    of: {
+                        dataType: "map",
+                        properties: {
+                            heading: {
+                                name: "Heading",
+                                dataType: "string",
+                            },
+                            content: {
+                                name: "Content",
+                                dataType: "string",
+                            },
+                            imageUrl: {
+                                name: "Image URL",
+                                dataType: "string",
+                                url: true
+                            },
+                        }
+                    },
+                    expanded: true,
+                },
+            },
+            expanded: true
+        },
+        paymentOption: {
+            name: "Payment Option Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                    multiline:true,
+                },
+                deposit: {
+                    dataType: "array",
+                    name: "Deposit",
+                    of: {
+                        dataType: "map",
+                        properties: {
+                            paymentMethod: {
+                                name: "Payment Method",
+                                dataType: "string",
+                                url:true
+                            },
+                            minimumDeposit: {
+                                name: "Minimum Deposit",
+                                dataType: "string",
+                            },
+                            maximumDeposit: {
+                                name: "Maximum Deposit",
+                                dataType: "string",
+                            },
+                            depositFees: {
+                                name: "Deposit Fees",
+                                dataType: "string",
+                            },
+                            depositTiming: {
+                                name: "Deposit Timing",
+                                dataType: "string",
+                            },
+                        }
+                    },
+                    expanded: true,
+                },
+                withdraw: {
+                    dataType: "array",
+                    name: "Withdraw",
+                    of: {
+                        dataType: "map",
+                        properties: {
+                            paymentMethod: {
+                                name: "Payment Method",
+                                dataType: "string",
+                                url:true
+                            },
+                            minimumDeposit: {
+                                name: "Minimum Deposit",
+                                dataType: "string",
+                            },
+                            maximumDeposit: {
+                                name: "Maximum Deposit",
+                                dataType: "string",
+                            },
+                            depositFees: {
+                                name: "Deposit Fees",
+                                dataType: "string",
+                            },
+                            depositTiming: {
+                                name: "Deposit Timing",
+                                dataType: "string",
+                            },
+                        }
+                    },
+                    expanded: true,
+                },
+            },
+            expanded: true
+        },
+        customerSupport: {
+            name: "Customer Support Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                list: {
+                    dataType: "array",
+                    name: "List",
+                    of: {
+                        dataType: "map",
+                        properties: {
+                            content: {
+                                name: "Content",
+                                dataType: "string",
+                            },
+                        }
+                    },
+                    expanded: true,
+                },
+                btnTxt: {
+                    name: "Button Text",
+                    dataType: "string",
+                },
+                btnLink: {
+                    name: "Button Link",
+                    dataType: "string",
+                    url: true
+                },
+                imageUrl: {
+                    name: "Image URL",
+                    dataType: "string",
+                    url: true
+                }
+            },
+            expanded: true
+        },
+        keyInfo: {
+            name: "Key Information Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                    multiline:true,
+                },
+            },
+            expanded: true
+        },
+    },
+});
