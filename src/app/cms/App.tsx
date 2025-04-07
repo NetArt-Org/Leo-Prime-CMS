@@ -46,6 +46,10 @@ import { tradingCollection } from "./collections/trading";
 import { demoCollection } from "./collections/demoAccount";
 import { platformCollection } from "./collections/platform";
 import { toolsCollection } from "./collections/tools";
+import { aboutCollection } from "./collections/about";
+import { whyleoprimeCollection } from "./collections/whyLeoPrime";
+import { contactCollection } from "./collections/contact";
+import { policyCollection } from "./collections/policies";
 
 export function App() {
 
@@ -74,7 +78,11 @@ export function App() {
             tradingCollection,
             demoCollection,
             platformCollection,
-            toolsCollection
+            toolsCollection,
+            aboutCollection,
+            whyleoprimeCollection,
+            contactCollection,
+            policyCollection
         ];
     }, []);
 

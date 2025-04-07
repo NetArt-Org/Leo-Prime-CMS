@@ -241,6 +241,131 @@ export type MarginEntry = {
         }[],
     },
 }
+export type AboutEntry = {
+    banner: {
+        heading: string,
+        content: string,
+        btnTxt1: string,
+        btnLink1: string,
+        btnTxt2: string,
+        btnLink2: string,
+    },
+    keyStats: {
+        heading: string;
+        content: string;
+    }[];
+    info: {
+        heading: string,
+        content: string,
+        imageUrl: string,
+        list: {
+            btnTxt: string;
+        }[];
+    },
+    buildTrust: {
+        heading: string,
+        content: string,
+        list: {
+            iconUrl:string;
+            heading: string;
+            content: string;
+        }[];
+    },
+    milestone: {
+        heading: string,
+        content: string,
+        list: {
+            imageUrl:string;
+            heading: string;
+        }[];
+    },
+    award: {
+        heading: string,
+        content: string,
+        list: {
+            imageUrl:string;
+            heading: string;
+            content: string;
+            btnTxt: string;
+            btnLink: string;
+        }[];
+    },
+}
+export type WhyLeoPrimeEntry = {
+    banner: {
+        heading: string,
+        content: string,
+        btnTxt1: string,
+        btnLink1: string,
+        btnTxt2: string,
+        btnLink2: string,
+    },
+    advantages: {
+        heading: string,
+        content: string,
+        list: {
+            image1:string;
+            image2:string;
+            heading: string;
+            content: string;
+        }[];
+    },
+    commitment: {
+        heading: string,
+        content: string,
+        btnTxt1: string,
+        btnLink1: string,
+        btnTxt2: string,
+        btnLink2: string,
+        imageUrl: string,
+    },
+    riskInfo: {
+        heading: string,
+        content: string,
+        list: {
+            heading: string;
+            content: string;
+        }[];
+        imageUrl:string
+    },
+    solutions: {
+        heading: string,
+        content: string,
+        list: {
+            imageUrl:string
+            heading: string;
+            content: string;
+        }[];
+    },
+}
+export type ContactEntry={
+    banner: {
+        heading: string,
+        content: string,
+        btnTxt: string,
+        btnLink: string,
+    },
+    info: {
+        heading: string,
+        content: string,
+        list: {
+            heading: string,
+            content: string,
+            imageUrl: string,
+            contact: string,
+        }[],
+        note:string
+    },
+    getInTouch:{
+        heading: string,
+        content: string,
+    }
+}
+export type PolicyEntry={
+    content:{
+        content:string
+    }
+}
 export type TradingEntry ={
     banner: {
         heading: string,
