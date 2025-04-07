@@ -48,12 +48,27 @@ export const demoCollection = buildCollection<DemoAccount>({
             properties: {
                 heading: {
                     name: "Heading",
-                    dataType: "string",
-                    markdown: true,
+                    dataType: "array",
+                    oneOf: {
+                        typeField: "type", // this will be the dropdown field
+                        valueField: "value", // this will hold the actual content data
+                        properties: {
+                            imageUrl: {
+                                name: "Image Url",
+                                dataType: "string",
+                                url: true
+                            },
+                            heading: {
+                                dataType: "string",
+                                name: "Heading",
+                            },
+                        }
+                    }
                 },
                 content: {
                     name: "Content",
                     dataType: "string",
+                    markdown: true,
                 },
                 btnTxt: {
                     name: "Button Text",
@@ -96,7 +111,7 @@ export const demoCollection = buildCollection<DemoAccount>({
                             imageUrl: {
                                 name: "Image Url",
                                 dataType: "string",
-                                url:true
+                                url: true
                             },
                         }
                     },
@@ -117,10 +132,10 @@ export const demoCollection = buildCollection<DemoAccount>({
                     name: "Content",
                     dataType: "string",
                 },
-                difference:{
+                difference: {
                     name: "Difference",
                     dataType: "string",
-                    markdown:true
+                    markdown: true
                 }
             },
             expanded: true

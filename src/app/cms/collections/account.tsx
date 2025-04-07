@@ -48,8 +48,22 @@ export const accountCollection = buildCollection<AccountEntry>({
             properties: {
                 heading: {
                     name: "Heading",
-                    dataType: "string",
-                    markdown: true,
+                    dataType: "array",
+                    oneOf: {
+                        typeField: "type", // this will be the dropdown field
+                        valueField: "value", // this will hold the actual content data
+                        properties: {
+                            imageUrl: {
+                                name: "Image Url",
+                                dataType: "string",
+                                url: true
+                            },
+                            heading: {
+                                dataType: "string",
+                                name: "Heading",
+                            },
+                        }
+                    }
                 },
                 content: {
                     name: "Content",

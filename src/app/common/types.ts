@@ -63,7 +63,10 @@ export type AccountEntry = {
         imageUrl: string,
     },
     info: {
-        heading: string,
+        heading:  {
+            type: "text" | "image"; // user chooses this from dropdown
+            value: string; // either markdown text or image URL
+        }[];
         content: string,
     },
     account: {
@@ -122,8 +125,11 @@ export type DemoAccount = {
         imageUrl: string,
     },
     info: {
-        heading: string,
-        content: string,
+        heading:  {
+            type: "text" | "image"; // user chooses this from dropdown
+            value: string; // either markdown text or image URL
+        }[];
+        content:string,
         btnTxt: string,
         btnLink: string,
     },
