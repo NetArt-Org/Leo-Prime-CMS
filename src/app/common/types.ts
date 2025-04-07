@@ -192,7 +192,6 @@ export type DepositEntry = {
     },
     customerSupport: {
         heading: string,
-        content: string,
         btnTxt: string,
         btnLink: string,
         imageUrl: string,
