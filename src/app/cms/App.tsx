@@ -44,6 +44,8 @@ import Link from "next/link";
 import { depositCollection } from "./collections/depositWithdraw";
 import { tradingCollection } from "./collections/trading";
 import { demoCollection } from "./collections/demoAccount";
+import { platformCollection } from "./collections/platform";
+import { toolsCollection } from "./collections/tools";
 
 export function App() {
 
@@ -70,7 +72,9 @@ export function App() {
             marginCollection,
             depositCollection,
             tradingCollection,
-            demoCollection
+            demoCollection,
+            platformCollection,
+            toolsCollection
         ];
     }, []);
 

@@ -93,6 +93,26 @@ export type AccountEntry = {
         imageUrl: string,
     },
 }
+export type ToolsEntry = {
+    banner: {
+        heading: string,
+        content: string,
+        btnTxt: string,
+        btnLink: string,
+    },
+    
+    steps: {
+        heading: string,
+        content: string,
+        steps: {
+            heading: string,
+            content: string,
+            imageUrl: string,
+            btnTxt: string,
+            link: string,
+        }[],
+    },
+}
 export type DemoAccount = {
     banner: {
         heading: string,
@@ -121,23 +141,58 @@ export type DemoAccount = {
         content: string,
         difference:string
     }
-    steps: {
-        heading: string,
-        content: string,
-        steps: {
-            heading: string,
-            content: string,
-            imageUrl: string,
-            btnTxt: string,
-            link: string,
-        }[],
-    },
     beginTrading: {
         heading: string,
         content: string,
         btnTxt: string,
         btnLink: string,
         imageUrl: string,
+    },
+}
+export type PlatformEntry = {
+    banner: {
+        heading: string,
+        content: string,
+        btnTxt: string,
+        btnLink: string,
+        imageUrl: string,
+    },
+    info: {
+        heading: string,
+        content: string,
+        imageUrl: string,
+        list: {
+            btnTxt: string;
+        }[];
+    },
+    keyBenefits: {
+        heading: string,
+        content: string,
+        list: {
+            iconUrl:string;
+            heading: string;
+            content: string;
+            imageUrl:string;
+        }[];
+    },
+    download: {
+        heading: string,
+        content: string,
+        imageUrl: string,
+        list: {
+            btnTxt: string;
+            btnLink: string;
+        }[];
+    },
+    whyChooseUs: {
+        heading: string,
+        content: string,
+        imageUrl: string,
+        list: {
+            heading: string,
+            content: string,
+            imageUrl: string,
+        }[],
     },
 }
 export type MarginEntry = {
