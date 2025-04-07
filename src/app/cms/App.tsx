@@ -46,7 +46,7 @@ import { tradingCollection } from "./collections/trading";
 
 export function App() {
 
-    const title = "Pranav System Blog Content";
+    const title = "Leo Prime Website CMS";
 
     if (!firebaseConfig?.projectId) {
         throw new Error("Firebase config not found. Please check your `firebase_config.ts` file and make sure it is correctly set up.");
