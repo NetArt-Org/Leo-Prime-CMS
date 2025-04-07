@@ -34,7 +34,7 @@ import { useBuildUserManagement, userManagementAdminViews, useUserManagementPlug
 import { useImportPlugin } from "@firecms/data_import";
 import { useExportPlugin } from "@firecms/data_export";
 import logo from "@/app/common/logo.svg";
-import { blogCollection } from "@/app/cms/collections/blog";
+// import { blogCollection } from "@/app/cms/collections/blog";
 import { homeCollection } from "./collections/home";
 import { accountCollection } from "./collections/account";
 import { marginCollection } from "./collections/marginRules";
@@ -63,7 +63,7 @@ export function App() {
 
     const collectionsBuilder = useCallback(() => {
         return [
-            blogCollection,
+            // blogCollection,
             homeCollection,
             accountCollection,
             marginCollection,
