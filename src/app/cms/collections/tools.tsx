@@ -11,6 +11,20 @@ export const toolsCollection = buildCollection<ToolsEntry>({
     description: "Tools Page Content",
     defaultSize: "l",
     properties: {
+        pageData:{
+            name:"Page Data",
+            dataType:"map",
+            properties: {
+                pageName: {
+                    name: "Page Name",
+                    dataType: "string",
+                },
+                pageSlug: {
+                    name: "Page Slug",
+                    dataType: "string",
+                },
+            },
+        },
         banner: {
             name: "Banner",
             dataType: "map",

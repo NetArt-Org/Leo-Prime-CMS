@@ -11,6 +11,20 @@ export const policyCollection = buildCollection<PolicyEntry>({
     description: "Policy Page Content",
     defaultSize: "l",
     properties: {
+        pageData:{
+            name:"Page Data",
+            dataType:"map",
+            properties: {
+                pageName: {
+                    name: "Page Name",
+                    dataType: "string",
+                },
+                pageSlug: {
+                    name: "Page Slug",
+                    dataType: "string",
+                },
+            },
+        },
         content: {
             name: "Policy Page Content",
             dataType: "map",

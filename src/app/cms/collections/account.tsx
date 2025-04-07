@@ -11,6 +11,20 @@ export const accountCollection = buildCollection<AccountEntry>({
     description: "Account Page Content",
     defaultSize: "l",
     properties: {
+        pageData:{
+            name:"Page Data",
+            dataType:"map",
+            properties: {
+                pageName: {
+                    name: "Page Name",
+                    dataType: "string",
+                },
+                pageSlug: {
+                    name: "Page Slug",
+                    dataType: "string",
+                },
+            },
+        },
         banner: {
             name: "Banner",
             dataType: "map",

@@ -55,6 +55,10 @@ export type HomeEntry = {
     };
 }
 export type AccountEntry = {
+    pageData: {
+        pageName: string,
+        pageSlug: string,
+    },
     banner: {
         heading: string,
         content: string,
@@ -97,6 +101,10 @@ export type AccountEntry = {
     },
 }
 export type ToolsEntry = {
+    pageData: {
+        pageName: string,
+        pageSlug: string,
+    },
     banner: {
         heading: string,
         content: string,
@@ -409,11 +417,19 @@ export type ContactEntry={
     }
 }
 export type PolicyEntry={
+    pageData: {
+        pageName: string,
+        pageSlug: string,
+    },
     content:{
         content:string
     }
 }
 export type TradingEntry ={
+    pageData: {
+        pageName: string,
+        pageSlug: string,
+    },
     banner: {
         heading: string,
         content: string,
