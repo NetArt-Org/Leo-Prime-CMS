@@ -43,6 +43,7 @@ import { Button, OpenInNewIcon } from "@firecms/ui";
 import Link from "next/link";
 import { depositCollection } from "./collections/depositWithdraw";
 import { tradingCollection } from "./collections/trading";
+import { demoCollection } from "./collections/demoAccount";
 
 export function App() {
 
@@ -68,7 +69,8 @@ export function App() {
             accountCollection,
             marginCollection,
             depositCollection,
-            tradingCollection
+            tradingCollection,
+            demoCollection
         ];
     }, []);
 

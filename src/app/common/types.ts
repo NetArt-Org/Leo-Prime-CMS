@@ -93,6 +93,53 @@ export type AccountEntry = {
         imageUrl: string,
     },
 }
+export type DemoAccount = {
+    banner: {
+        heading: string,
+        content: string,
+        btnTxt: string,
+        btnLink: string,
+        imageUrl: string,
+    },
+    info: {
+        heading: string,
+        content: string,
+        btnTxt: string,
+        btnLink: string,
+    },
+    advantages: {
+        heading: string,
+        content: string,
+        list: {
+            heading: string;
+            content: string;
+            imageUrl:string
+        }[];
+    },
+    keyDifference:{
+        heading: string,
+        content: string,
+        difference:string
+    }
+    steps: {
+        heading: string,
+        content: string,
+        steps: {
+            heading: string,
+            content: string,
+            imageUrl: string,
+            btnTxt: string,
+            link: string,
+        }[],
+    },
+    beginTrading: {
+        heading: string,
+        content: string,
+        btnTxt: string,
+        btnLink: string,
+        imageUrl: string,
+    },
+}
 export type MarginEntry = {
     banner: {
         heading: string,

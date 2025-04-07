@@ -1,0 +1,206 @@
+import { buildCollection } from "@firecms/core";
+import { DemoAccount } from "@/app/common/types";
+
+export const demoCollection = buildCollection<DemoAccount>({
+    id: "demo",
+    path: "demo",
+    name: "Demo Account",
+    singularName: "Demo Account entry",
+    icon: "article",
+    group: "Content",
+    description: "Demo Account Page Content",
+    defaultSize: "l",
+    properties: {
+        banner: {
+            name: "Banner",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                    multiline: true,
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                    multiline: true,
+                },
+                btnTxt: {
+                    name: "Button Text",
+                    dataType: "string",
+                },
+                btnLink: {
+                    name: "Button Link",
+                    dataType: "string",
+                    url: true
+                },
+                imageUrl: {
+                    name: "Image URL",
+                    dataType: "string",
+                    url: true
+                }
+            },
+            expanded: true
+        },
+        info: {
+            name: "Info Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                    markdown: true,
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                btnTxt: {
+                    name: "Button Text",
+                    dataType: "string",
+                },
+                btnLink: {
+                    name: "Button Link",
+                    dataType: "string",
+                    url: true
+                },
+            },
+            expanded: true
+        },
+        advantages: {
+            name: "Advantages Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                list: {
+                    dataType: "array",
+                    name: "List",
+                    of: {
+                        dataType: "map",
+                        properties: {
+                            heading: {
+                                name: "Heading(Optional)",
+                                dataType: "string",
+                            },
+                            content: {
+                                name: "Content(Optional)",
+                                dataType: "string",
+                            },
+                            imageUrl: {
+                                name: "Image Url",
+                                dataType: "string",
+                                url:true
+                            },
+                        }
+                    },
+                    expanded: true,
+                },
+            },
+            expanded: true
+        },
+        keyDifference: {
+            name: "Key Difference Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                difference:{
+                    name: "Difference",
+                    dataType: "string",
+                    markdown:true
+                }
+            },
+            expanded: true
+        },
+        steps: {
+            name: "Steps Account Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                steps: {
+                    dataType: "array",
+                    name: "Steps",
+                    of: {
+                        dataType: "map",
+                        properties: {
+                            heading: {
+                                name: "Heading",
+                                dataType: "string",
+                            },
+                            content: {
+                                name: "Content",
+                                dataType: "string",
+                            },
+                            imageUrl: {
+                                name: "Image URL",
+                                dataType: "string",
+                                url: true
+                            },
+                            btnTxt: {
+                                name: "Button Text",
+                                dataType: "string",
+                            },
+                            link: {
+                                name: "Link",
+                                dataType: "string",
+                                url: true
+                            }
+                        }
+                    },
+                    expanded: true,
+                },
+            },
+            expanded: true
+        },
+        beginTrading: {
+            name: "Begin Trading Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                    multiline: true,
+                },
+                btnTxt: {
+                    name: "Button Text",
+                    dataType: "string",
+                },
+                btnLink: {
+                    name: "Button Link",
+                    dataType: "string",
+                    url: true
+                },
+                imageUrl: {
+                    name: "Image URL",
+                    dataType: "string",
+                    url: true
+                }
+            },
+            expanded: true
+        },
+    },
+});
