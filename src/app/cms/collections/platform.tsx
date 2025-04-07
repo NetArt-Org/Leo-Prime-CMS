@@ -53,6 +53,7 @@ export const platformCollection = buildCollection<PlatformEntry>({
                 content: {
                     name: "Content",
                     dataType: "string",
+                    multiline:true
                 },
                 imageUrl: {
                     name: "Image URL",

@@ -195,6 +195,47 @@ export type PlatformEntry = {
         }[],
     },
 }
+export type BrokerEntry = {
+    banner: {
+        heading: string,
+        content: string,
+        btnTxt: string,
+        btnLink: string,
+        imageUrl: string,
+    },
+    info: {
+        heading: string,
+        content: string,
+        imageUrl: string,
+        list: {
+            btnTxt: string;
+        }[];
+    },
+    keyBenefits: {
+        heading: string,
+        content: string,
+        list: {
+            iconUrl:string;
+            heading: string;
+            content: string;
+        }[];
+    },
+    steps: {
+        heading: string,
+        content: string,
+        steps: {
+            heading: string,
+            content: string,
+            imageUrl: string,
+            btnTxt: string,
+            link: string,
+        }[],
+    },
+    getInTouch:{
+        heading: string,
+        content: string,
+    }
+}
 export type MarginEntry = {
     banner: {
         heading: string,
