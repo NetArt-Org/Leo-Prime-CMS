@@ -152,6 +152,7 @@ export const whyleoprimeCollection = buildCollection<WhyLeoPrimeEntry>({
                             content: {
                                 name: "Content",
                                 dataType: "string",
+                                multiline:true
                             },
                         }
                     },
