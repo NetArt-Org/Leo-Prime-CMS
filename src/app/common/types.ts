@@ -18,11 +18,7 @@ export type HomeEntry = {
     explore: {
         heading: string;
         content: string;
-        carousel: {
-            heading: string;
-            content: string;
-            imageUrl: string;
-        }[];
+        carousel:string;
     };
     trading: {
         heading: string;

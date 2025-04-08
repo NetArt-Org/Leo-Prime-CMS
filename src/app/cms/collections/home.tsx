@@ -127,36 +127,9 @@ export const homeCollection = buildCollection<HomeEntry>({
                     dataType: "string",
                 },
                 carousel: {
-                    dataType: "array",
+                    dataType: "string",
                     name: "Carousel",
-                    of: {
-                        dataType: "map",
-                        properties: {
-                            heading: {
-                                name: "Heading",
-                                dataType: "string",
-                            },
-                            content: {
-                                name: "Content",
-                                dataType: "string",
-                            },
-                            imageUrl: {
-                                name: "Image URL",
-                                dataType: "string",
-                                url: true
-                            },
-                            btnTxt: {
-                                name: "Button Text",
-                                dataType: "string",
-                            },
-                            link: {
-                                name: "Link",
-                                dataType: "string",
-                                url: true
-                            }
-                        }
-                    },
-                    expanded: true,
+                    markdown:true
                 },
             },
             expanded: true
