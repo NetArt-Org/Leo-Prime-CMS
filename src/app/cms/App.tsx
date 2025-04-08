@@ -50,6 +50,7 @@ import { aboutCollection } from "./collections/about";
 import { whyleoprimeCollection } from "./collections/whyLeoPrime";
 import { contactCollection } from "./collections/contact";
 import { policyCollection } from "./collections/policies";
+import { brokerCollection } from "./collections/broker";
 
 export function App() {
 
@@ -82,7 +83,8 @@ export function App() {
             aboutCollection,
             whyleoprimeCollection,
             contactCollection,
-            policyCollection
+            policyCollection,
+            brokerCollection
         ];
     }, []);
 
