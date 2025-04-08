@@ -18,18 +18,16 @@ export type HomeEntry = {
     explore: {
         heading: string;
         content: string;
-        carousel:string;
-    };
-    trading: {
-        heading: string;
-        content: string;
         carousel: {
             heading: string;
             content: string;
             imageUrl: string;
-            btnTxt: string;
-            link: string;
         }[];
+    };
+    trading: {
+        heading: string;
+        content: string;
+        carousel: string;
     };
     trade: {
         heading: string;
