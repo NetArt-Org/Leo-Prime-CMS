@@ -112,34 +112,9 @@ export const marginCollection = buildCollection<MarginEntry>({
                     dataType: "string",
                 },
                 list: {
-                    dataType: "array",
-                    name: "List",
-                    of: {
-                        dataType: "map",
-                        properties: {
-                            leverage: {
-                                name: "Leverage",
-                                dataType: "string",
-                            },
-                            cent: {
-                                name: "Cent",
-                                dataType: "string",
-                            },
-                            classic: {
-                                name: "Classic",
-                                dataType: "string",
-                            },
-                            pro: {
-                                name: "Pro",
-                                dataType: "string",
-                            },
-                            ecn: {
-                                name: "ECN",
-                                dataType: "string",
-                            },
-                        }
-                    },
-                    expanded: true,
+                    name: "Rules",
+                    dataType: "string",
+                    markdown:true
                 },
             },
             expanded: true

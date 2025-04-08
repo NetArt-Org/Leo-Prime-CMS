@@ -269,14 +269,7 @@ export type MarginEntry = {
     rulesTable: {
         heading: string,
         content: string,
-        list: {
-            heading: string;
-            content: string;
-            cent: string;
-            classic: string;
-            pro: string;
-            ecn: string;
-        }[];
+        list: string;
     },
     steps: {
         heading: string,
