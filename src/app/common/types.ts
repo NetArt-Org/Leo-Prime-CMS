@@ -242,7 +242,12 @@ export type BrokerEntry = {
     getInTouch:{
         heading: string,
         content: string,
-    }
+    },
+    cta: {
+        heading: string,
+        btnTxt: string,
+        btnLink: string,
+    },
 }
 export type MarginEntry = {
     banner: {

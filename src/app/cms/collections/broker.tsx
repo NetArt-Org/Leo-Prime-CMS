@@ -51,7 +51,7 @@ export const brokerCollection = buildCollection<BrokerEntry>({
                 content: {
                     name: "Content",
                     dataType: "string",
-                    multiline:true
+                    multiline: true
                 },
                 imageUrl: {
                     name: "Image URL",
@@ -96,12 +96,12 @@ export const brokerCollection = buildCollection<BrokerEntry>({
                             iconUrl: {
                                 name: "Icon Url",
                                 dataType: "string",
-                                url:true
+                                url: true
                             },
                             heading: {
                                 name: "Heading",
                                 dataType: "string",
-                                multiline:true
+                                multiline: true
                             },
                             content: {
                                 name: "Content",
@@ -176,5 +176,25 @@ export const brokerCollection = buildCollection<BrokerEntry>({
             },
             expanded: true
         },
+        cta: {
+            name: "CTA",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                btnTxt: {
+                    name: "Button Text",
+                    dataType: "string",
+                },
+                btnLink: {
+                    name: "Button Link",
+                    dataType: "string",
+                    url: true
+                },
+            },
+            expanded: true
+        }
     },
 });
