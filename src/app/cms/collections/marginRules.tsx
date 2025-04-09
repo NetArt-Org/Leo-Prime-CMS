@@ -67,6 +67,26 @@ export const marginCollection = buildCollection<MarginEntry>({
             },
             expanded: true
         },
+        rulesTable: {
+            name: "Rules Table Section",
+            dataType: "map",
+            properties: {
+                heading: {
+                    name: "Heading",
+                    dataType: "string",
+                },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
+                list: {
+                    name: "Rules",
+                    dataType: "string",
+                    markdown:true
+                },
+            },
+            expanded: true
+        },
         margin: {
             name: "Margin Section",
             dataType: "map",
@@ -95,26 +115,6 @@ export const marginCollection = buildCollection<MarginEntry>({
                     name: "Content",
                     dataType: "string",
                     multiline:true,
-                },
-            },
-            expanded: true
-        },
-        rulesTable: {
-            name: "Rules Table Section",
-            dataType: "map",
-            properties: {
-                heading: {
-                    name: "Heading",
-                    dataType: "string",
-                },
-                content: {
-                    name: "Content",
-                    dataType: "string",
-                },
-                list: {
-                    name: "Rules",
-                    dataType: "string",
-                    markdown:true
                 },
             },
             expanded: true
