@@ -250,6 +250,7 @@ export type BrokerEntry = {
 export type CTAEntry = {
     cta: {
         heading: string,
+        content: string,
         btnTxt: string,
         btnLink: string,
     },

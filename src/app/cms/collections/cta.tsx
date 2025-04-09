@@ -19,6 +19,10 @@ export const ctaCollection = buildCollection<CTAEntry>({
                     name: "Heading",
                     dataType: "string",
                 },
+                content: {
+                    name: "Content",
+                    dataType: "string",
+                },
                 btnTxt: {
                     name: "Button Text",
                     dataType: "string",
