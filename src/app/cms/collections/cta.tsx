@@ -23,11 +23,20 @@ export const ctaCollection = buildCollection<CTAEntry>({
                     name: "Content",
                     dataType: "string",
                 },
-                btnTxt: {
+                btnTxt1: {
                     name: "Button Text",
                     dataType: "string",
                 },
-                btnLink: {
+                btnLink1: {
+                    name: "Button Link",
+                    dataType: "string",
+                    url: true
+                },
+                btnTxt2: {
+                    name: "Button Text",
+                    dataType: "string",
+                },
+                btnLink2: {
                     name: "Button Link",
                     dataType: "string",
                     url: true

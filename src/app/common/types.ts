@@ -251,8 +251,10 @@ export type CTAEntry = {
     cta: {
         heading: string,
         content: string,
-        btnTxt: string,
-        btnLink: string,
+        btnTxt1: string,
+        btnLink1: string,
+        btnTxt2: string,
+        btnLink2: string,
     },
 }
 export type MarginEntry = {
