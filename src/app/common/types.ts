@@ -235,14 +235,19 @@ export type BrokerEntry = {
             heading: string,
             content: string,
             imageUrl: string,
-            btnTxt: string,
-            link: string,
         }[],
     },
     getInTouch:{
         heading: string,
         content: string,
     },
+    cta: {
+        heading: string,
+        btnTxt: string,
+        btnLink: string,
+    },
+}
+export type CTAEntry = {
     cta: {
         heading: string,
         btnTxt: string,

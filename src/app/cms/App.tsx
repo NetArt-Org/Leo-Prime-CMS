@@ -51,6 +51,7 @@ import { whyleoprimeCollection } from "./collections/whyLeoPrime";
 import { contactCollection } from "./collections/contact";
 import { policyCollection } from "./collections/policies";
 import { brokerCollection } from "./collections/broker";
+import { ctaCollection } from "./collections/cta";
 
 export function App() {
 
@@ -84,7 +85,8 @@ export function App() {
             whyleoprimeCollection,
             contactCollection,
             policyCollection,
-            brokerCollection
+            brokerCollection,
+            ctaCollection
         ];
     }, []);
 

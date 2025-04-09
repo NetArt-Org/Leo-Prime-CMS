@@ -145,15 +145,6 @@ export const brokerCollection = buildCollection<BrokerEntry>({
                                 dataType: "string",
                                 url: true
                             },
-                            btnTxt: {
-                                name: "Button Text",
-                                dataType: "string",
-                            },
-                            link: {
-                                name: "Link",
-                                dataType: "string",
-                                url: true
-                            }
                         }
                     },
                     expanded: true,
