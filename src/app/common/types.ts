@@ -257,6 +257,22 @@ export type CTAEntry = {
         btnLink2: string,
     },
 }
+export type HeaderEntry={
+    header:string,
+    menu:string
+}
+export type FooterEntry={
+    menu:string,
+    subscribeHeading:string,
+    subscribeContent:string,
+    contact:string,
+    companyInfo:string,
+    operation:string,
+    disclaimer:string,
+    riskWarning:string,
+    jurisdiction:string,
+    copyright:string,
+}
 export type MarginEntry = {
     banner: {
         heading: string,

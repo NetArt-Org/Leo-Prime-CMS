@@ -52,6 +52,8 @@ import { contactCollection } from "./collections/contact";
 import { policyCollection } from "./collections/policies";
 import { brokerCollection } from "./collections/broker";
 import { ctaCollection } from "./collections/cta";
+import { headerCollection } from "./collections/header";
+import { footerCollection } from "./collections/footer";
 
 export function App() {
 
@@ -86,7 +88,9 @@ export function App() {
             contactCollection,
             policyCollection,
             brokerCollection,
-            ctaCollection
+            ctaCollection,
+            headerCollection,
+            footerCollection
         ];
     }, []);
 
